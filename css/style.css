@@ -142,6 +142,8 @@ body {
 .header .copyright .boot {
 
     color: var(--blue-color);
+
+
 }
 
 .header .copyright {
@@ -151,6 +153,7 @@ body {
     left: 50%;
 
     transform: translateX(-50%);
+    font-size: 10px;
 }
 
 /* start about  */
