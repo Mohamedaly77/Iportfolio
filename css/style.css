@@ -134,7 +134,10 @@ body {
         margin: 0 -35px 0 35px;
     }
 } */
+.header {
 
+    position: relative;
+}
 
 .header .copyright .boot {
 
