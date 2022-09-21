@@ -1,0 +1,582 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --dark-color: #040b14;
+    --blue-color: #149ddd;
+    --white-color: #f5f8fd;
+    --write-color: #1f5297;
+}
+
+
+body {
+
+    font-family: 'Raleway', sans-serif;
+    margin: 0
+}
+
+.landing .header {
+
+    background-color: var(--dark-color);
+    min-height: 100vh;
+
+
+
+}
+
+/* .landing .header {
+    transition: 0.5s;
+    transform: translateX(-100%);
+} */
+
+.header .open {
+
+    transform: translateX(0);
+}
+
+.landing .portfolio {
+
+    background: url(../css/images/hero-bg.jpg) top center;
+    background-size: cover;
+    overflow: hidden;
+    border: 1px solid black;
+
+}
+
+
+
+
+.landing ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing ul li {
+
+    margin: 15px;
+}
+
+.landing ul li a {
+
+    padding-left: 10px;
+}
+
+.landing ul svg {
+
+    padding-right: 20px;
+}
+
+.header ul .home {
+
+    color: #f8f9fa;
+}
+
+.portfolio {
+
+    position: relative;
+
+}
+
+.portfolio svg {
+
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.portfolio .text {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+
+.portfolio .text h1 {
+
+    font-size: 5rem;
+}
+
+.portfolio .text p {
+    font-size: 4rem;
+    position: relative;
+}
+
+.portfolio .text p::after {
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid green;
+    left: 0;
+    background-color: transparent;
+    animation: typing 1.5s steps(10) infinite;
+
+}
+
+/* 
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+} */
+
+
+.header .copyright .boot {
+
+    color: var(--blue-color);
+}
+
+.header .copyright {
+
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+/* start about  */
+
+
+.about .main-text h2 {
+
+    position: relative;
+}
+
+.about .main-text h2::after {
+
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--blue-color);
+    bottom: -20px;
+    left: 45px;
+    transform: translateX(-50%);
+}
+
+
+/* end about  */
+
+/* start skills  */
+
+.about svg {
+
+    padding-top: 5px;
+    padding-right: 5px;
+    color: var(--blue-color);
+}
+
+
+
+.content h3 {
+
+    color: #173b6c;
+    font-size: 26px;
+}
+
+
+
+
+
+/* End skills  */
+
+/* start facts */
+
+
+
+.facts .main-text h2 {
+
+    position: relative;
+}
+
+.facts .main-text h2::after {
+
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--blue-color);
+    bottom: -20px;
+    left: 36px;
+    transform: translateX(-50%);
+}
+
+
+.facts div>span {
+
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+
+
+
+
+.facts svg {
+
+    color: var(--blue-color);
+    font-weight: normal;
+}
+
+
+
+
+/* start facts */
+.skills {
+    background-color: #f5f8fd;
+}
+
+.skills .prog-holder .prog {
+
+    background-color: #eee;
+    height: 10px;
+}
+
+.skills .prog-holder .prog {
+    animation: autofill 2s forwards;
+}
+
+@keyframes autofill {
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .prog-holder .prog span {
+    display: block;
+    background-color: var(--blue-color);
+    height: 100%;
+}
+
+/* start resume */
+
+
+.resume {
+
+    color: var(--dark-color)
+}
+
+.resume .data-1 {
+
+    border-left: 2px solid var(--blue-color);
+
+    padding-left: 20px;
+    position: relative;
+}
+
+.resume .data-2 {
+    border-left: 2px solid var(--blue-color);
+
+    padding-left: 20px;
+    position: relative;
+}
+
+.resume .data-3 {
+    border-left: 2px solid var(--blue-color);
+
+    padding-left: 20px;
+    position: relative;
+
+}
+
+
+.resume .data-2 span {
+
+    background-color: var(--white-color)
+}
+
+.resume .data-3 span {
+
+    background-color: var(--white-color);
+}
+
+
+.resume .data-1::after {
+
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 13px;
+    background-color: var(--blue-color);
+    left: -9px;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+
+.resume .data-2::after {
+
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 13px;
+    background-color: var(--blue-color);
+    left: -9px;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+.resume .data-3::after {
+
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 13px;
+    background-color: var(--blue-color);
+    left: -9px;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+.resume .exp .data-4 {
+    border-left: 2px solid var(--blue-color);
+
+    padding-left: 20px;
+    position: relative;
+
+}
+
+.resume .exp .data-4::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 13px;
+    background-color: var(--blue-color);
+    left: -9px;
+    background: #fff;
+    border: 2px solid #1f5297;
+
+}
+
+.resume .exp .data-5::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 13px;
+    background-color: var(--blue-color);
+    left: -9px;
+    background: #fff;
+    border: 2px solid #1f5297;
+
+}
+
+.resume .exp .data-5 {
+    border-left: 2px solid var(--blue-color);
+
+    padding-left: 20px;
+    position: relative;
+
+}
+
+/* start portfolio */
+
+.portfolio {
+
+    background-color: var(--white-color);
+}
+
+.portfolio ul li {
+
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.portfolio ul li.active {
+
+    color: var(--blue-color);
+}
+
+.portfolio ul li:hover {
+
+    color: var(--blue-color);
+}
+
+.portfolio .box {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .box::before {
+
+    content: attr(data-progress);
+    position: absolute;
+    background-color: #149ddd3b;
+    ;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateY(70%);
+
+
+
+}
+
+.portfolio .box:hover::before {
+
+    transform: translateY(0);
+}
+
+/* start portfolio */
+/* start services */
+
+.services svg {
+
+    border: 2px solid var(--blue-color);
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+    background-color: var(--blue-color);
+    transition: 0.2s;
+}
+
+.services svg:hover {
+
+    color: var(--blue-color);
+    background-color: white;
+
+}
+
+.services h3 {
+
+    font-size: 1.25rem;
+}
+
+
+/* start services */
+
+/* start testimonials */
+
+#test {
+
+    background-color: var(--white-color);
+}
+
+#test button span {
+
+    color: #040b14;
+}
+
+.carousel-control-prev-icon {
+
+    background-color: var(--blue-color);
+}
+
+
+/* start testimonials */
+/* start contact  */
+
+.contact span {
+
+    padding-left: 20px;
+}
+
+.contact svg {
+
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #dff3fc;
+    float: left;
+    margin-top: 10px;
+}
+
+
+.contact p:last-child {
+
+    padding-left: 55px;
+}
+
+.contact .text {
+
+    padding: 0;
+}
+
+.contact .info {
+    border: 1px solid transparent;
+    padding: 30px;
+
+    box-shadow: 1px 2px 15px rgb(0 0 0 / 10%);
+    width: 100%;
+
+
+}
+
+.contact .form {
+
+    border: 1px solid transparent;
+    padding: 20px;
+    width: 100%;
+
+    box-shadow: 1px 2px 15px rgb(0 0 0 / 10%);
+
+}
+
+.contact .btn {
+
+    display: flex;
+    justify-content: center;
+}
+
+.contact .formgroup {
+
+    margin-bottom: 15px;
+}
+
+
+.contact input {
+
+    height: 44px;
+}
+
+/* end contact  */
+
+/* start footer */
+/* start footer */
+.footer {
+
+    background-color: var(--dark-color);
+}
+
+.footer .boot {
+
+    color: var(--blue-color);
+}
+
+/* end  footer */
